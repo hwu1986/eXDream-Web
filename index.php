@@ -22,9 +22,12 @@ eXDream Inc.
 		$(function(){
 			$('#slider').anythingSlider({
 				resizeContents      : true,
+				autoPlay			: true,
+				delay				: 5000,
+				buildStartStop		: false,
 				addWmodeToObject    : 'transparent',
 				navigationFormatter : function(index, panel){ // Format navigation labels with text
-					return ['Vimeo-iframe', 'Vimeo-embed', 'YouTube-iframe', 'YouTube-embed', 'HTML5 Video'][index - 1];
+					return ['Fall in Love on Tuesday', 'eXDream-FB100+', 'eXDream-Boba', 'USFTSA-White', 'USFTSA-Black'][index - 1];
 				}
 			});
 		});
@@ -47,30 +50,36 @@ eXDream Inc.
 		<hr color="grey" width="12.5%">
 		<hr color="grey" width="6.25%">
 	</div>
-	<div class="nav">
-		<ul class="nav center">
-			<li>Home</li>
-			<li>Bio</li>
-			<li>Projects</li>
-			<li>Contact Us</li>
+	<div class="nav center">
+		<ul class="nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
 		</ul>
 	</div>
-	<div class"video">
-		<!-- START AnythingSlider -->
-		<ul id="slider">
-			<li class="panel3"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/1gOyrAVZHi4" frameborder="0" allowfullscreen></iframe></li>
-			<li class="panel3"><iframe width="560" height="315" src="http://www.youtube.com/embed/g4ghWdvE9NA" frameborder="0" allowfullscreen></iframe></li>
-			<li class="panel3"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/1gOyrAVZHi4" frameborder="0" allowfullscreen></iframe></li>
-			<li class="panel3"><iframe width="560" height="315" src="https://www.youtube.com/embed/g4ghWdvE9NA" frameborder="0" allowfullscreen></iframe></li>
-			<li class="panel3"><iframe title="YouTube video player" width="480" height="385" src="https://www.youtube.com/embed/1gOyrAVZHi4" frameborder="0" allowfullscreen></iframe></li>
-			<li class="panel3"><iframe width="560" height="315" src="https://www.youtube.com/embed/g4ghWdvE9NA" frameborder="0" allowfullscreen></iframe></li>
-		</ul> 
-		<!-- END AnythingSlider -->
-
-	<br>
-
-
-
+	
+	<!--  START CONTENT FOR EACH PAGE -->
+	<div class="content">
+		<div id ="video">
+			<!-- START AnythingSlider -->
+			<ul id="slider">
+				<li class="panel3"><iframe width="560" height="315" src="https://www.youtube.com/embed/-WDtrEBAygg?rel=0" frameborder="0" allowfullscreen></iframe></li>
+				<li class="panel3"><iframe width="560" height="315" src="https://www.youtube.com/embed/fB_wgarocq8?rel=0" frameborder="0" allowfullscreen></iframe></li>
+				<li class="panel3"><iframe width="560" height="315" src="https://www.youtube.com/embed/6UAC2cdmXS4?rel=0" frameborder="0" allowfullscreen></iframe></li>
+				<li class="panel3"><iframe width="560" height="315" src="https://www.youtube.com/embed/JWv--3Cjh6k?rel=0" frameborder="0" allowfullscreen></iframe></li>
+				<li class="panel3"><iframe width="560" height="315" src="https://www.youtube.com/embed/ckTGQIwsvuA?rel=0" frameborder="0" allowfullscreen></iframe></li>
+			</ul> 
+			<!-- END AnythingSlider -->
+		</div>
+		
+		<div id ="about-us">
+		</div>
+		
+		<div id ="contact-us">
+		</div>
+		
 	</div>
-
-</body></html>
+	<!--  END CONTENT -->
+</body>
+</html>
